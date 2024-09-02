@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Artista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gestor de Música</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addAlbum.html">Agregar Álbum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="addArtist.html">Agregar Artista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addGenre.html">Agregar Género</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario para Agregar Artista -->
+    <div class="container mt-5">
+        <h2>Agregar Artista</h2>
+        <form id="addArtistForm">
+            <div class="form-group">
+                <label for="artistName">Nombre del Artista</label>
+                <input type="text" class="form-control" id="artistName" placeholder="Nombre del Artista">
+            </div>
+            <div class="form-group">
+                <label for="artistType">Tipo de Artista</label>
+                <input type="text" class="form-control" id="artistType" placeholder="Tipo (Ej. Solista, Banda)">
+            </div>
+            <div class="form-group">
+                <label for="artistDescription">Descripción</label>
+                <textarea class="form-control" id="artistDescription" placeholder="Descripción del Artista"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Guardar Artista</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
